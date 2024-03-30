@@ -1,0 +1,22 @@
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h1,
+h2 {
+  font-family: "Lato Black", sans-serif;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+p {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 30px;
+}
