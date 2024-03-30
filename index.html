@@ -2,17 +2,17 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="nhungfont.css">
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Những điều cơ bản về HTML và CSS trong lập trình web</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/nhungfont.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Những điều cơ bản về HTML và CSS trong lập trình Web</title>
   </head>
   <body>
     <!-- Tiêu đề -->
     <header>
       <section>
-        <h1>Những điều cơ bản về HTML và CSS trong lập trình web</h1>
+        <h1>Những điều cơ bản về HTML và CSS trong lập trình Web</h1>
       </section>
     </header>
 
@@ -28,28 +28,75 @@
         <p>
           Nếu như bạn có hứng thú với việc tạo các trang web, bạn có thể đã nghe
           đến 2 ngôn ngữ HTML và CSS, nhưng chúng là gì? Và tại sao nó lại quan
-          trọng trong việc tạo ra 1 trang web như thế? DƯới đây mình sẽ giải đáp
+          trọng trong việc tạo ra 1 trang web như thế? Dưới đây mình sẽ giải đáp
           các thắc mắc và hướng dẫn chi tiết những điều cơ bản cần biết khi học
           HTML và CSS.
         </p>
       </article>
 
-      <!-- html và gì -->
-      <section class="html-la-gi">
+      <!-- html là gì -->
+      <section>
         <h2 id="html-la-gi">HTML là gì?</h2>
         <p>
           HTML là viết tắt của HyperText Markup Language, dịch ra có nghĩa là
-          Ngô ngữ Đánh dấu Siêu Văn bản, vì thế nên HTML không phải là ngôn ngữ
-          lập trình. <br />
-          Trong lập trình web, HTML được sử dụng rộng rãi để tạo nên cấu trúc cơ
-          bản của 1 trang web thông qua các cặp thẻ của nó, trong đó, 1 cặp thẻ
-          sẽ có 1 thẻ đóng và thẻ mở, ví dụ: <br />
-          <code>&lt;p&gt;Cặp thẻ tiêu đề&lt;/p&gt;</code> <br />
-          Trong đó, thẻ mở của dòng code trên là: <code>&lt;p&gt;</code>, đối
+          Ngôn ngữ Đánh dấu Siêu Văn bản, vì thế nên HTML không phải là ngôn ngữ
+          lập trình.
+        </p>
+
+        <p>
+          Trong lập trình Web, HTML được sử dụng rộng rãi để tạo nên cấu trúc cơ
+          bản của 1 trang Web thông qua các cặp thẻ của nó, trong đó, 1 cặp thẻ
+          sẽ có 1 thẻ đóng và thẻ mở, ví dụ:
+        </p>
+
+        <code>&lt;h1&gt;Cặp thẻ tiêu đề&lt;/h1&gt;</code>
+
+        <p>
+          Trong đó, thẻ mở của dòng code trên là: <code>&lt;h1&gt;</code>, đối
           với thẻ đóng thì sẽ có 1 dấu gạch chéo đằng trước tên thẻ:
-          <code>&lt;/p&gt;</code>
+          <code>&lt;/h1&gt;</code>
         </p>
       </section>
+
+      <!-- css là gì -->
+      <section>
+        <h2 id="css-la-gi">CSS là gì?</h2>
+        <p>
+          CSS là viết tắt của Cascading Style Sheets, cũng giống như HTML, CSS
+          cũng không phải là Ngôn ngữ Lập trình, CSS chỉ được coi là một Ngôn
+          ngữ Điều chỉnh Giao diện.
+        </p>
+
+        <p>
+          Trong Lập trình Web, CSS thường được sử dụng để định dạng, tạo kiểu
+          cho các phần tử HTML, giúp trang Web trở nên bắt mắt hơn. ! ví dụ cho
+          việc sử dụng CSS trong dự án:
+        </p>
+
+        <div class="vd-html">
+          <p>HTML</p>
+          <pre>
+<code>&lt;body&gt;
+    &lt;div class = &quot;box&quot;&gt;Box&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+        </div>
+
+        <div class="vd-css">
+          <p>CSS</p>
+          <pre>
+<code>.box {
+  font-size: 50px; /* cỡ chữ 50px */
+  color: white; /* màu chữ trắng */
+  background-color: black; /* nền đen */
+  width: 250px; /* rộng 250px */
+  height: 250px; /* cao 250px */
+}</code></pre>
+        </div>
+
+        <p>Output:</p>
+        <img src="./assets/img/black-box.png" alt="Black Box" />
+      </section>
+    </main>
 
     <!-- chân bài viết -->
     <footer>

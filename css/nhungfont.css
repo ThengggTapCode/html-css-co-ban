@@ -6,3 +6,7 @@
   font-family: "Open Sans Regular";
   src: url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "JetBrains Mono Bold";
+  src: url(/assets/fonts/JetBrainsMono-Bold.ttf) format("truetype");
+}

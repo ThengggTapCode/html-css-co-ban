@@ -1,0 +1,87 @@
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato Black", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+code {
+  font-family: "JetBrains Mono Bold";
+  font-size: 30px;
+  line-height: 50px;
+  background-color: #1a1b2c;
+  color: #c0caf5;
+  padding: 5px;
+  border-radius: 5px;
+}
+pre {
+  background-color: #1a1b2c;
+  padding: 25px;
+  border-radius: 5px;
+}
+.vd-html,
+.vd-css {
+  background-color: #111116;
+  margin: 20px;
+}
+.vd-html pre,
+.vd-css pre {
+  height: 300px;
+  overflow: auto;
+  overscroll-behavior: auto;
+}
+.vd-html p,
+.vd-css p {
+  color: #cfd3e6;
+  font-family: "JetBrains Mono Bold", monospace;
+  margin: 10px;
+  padding: 10px;
+}
+.vd-html code,
+.vd-css code {
+  font-size: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #46476e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0caf5;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #97a0c7;
+}
