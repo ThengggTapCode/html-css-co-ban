@@ -62,7 +62,7 @@ pre {
 }
 .vd-html pre,
 .vd-css pre {
-  height: 300px;
+  height: 500px;
   overflow: auto;
   overscroll-behavior: auto;
 }
