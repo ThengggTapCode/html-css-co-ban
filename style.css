@@ -7,8 +7,8 @@
   src: url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "JetBrains-Mono-Bold";
-  src: url(./assets/fonts/JetBrainsMono-Bold.ttf) format("truetype");
+  font-family: "JetBrains-Mono-Regular";
+  src: url(./assets/fonts/JetBrainsMono-Regular.ttf) format("truetype");
 }
 header,
 nav,
@@ -26,7 +26,7 @@ h3 {
   margin-bottom: 25px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 h2 {
   font-size: 40px;
@@ -42,7 +42,7 @@ p {
   line-height: 40px;
 }
 code {
-  font-family: "JetBrains-Mono-Bold", monospace;
+  font-family: "JetBrains-Mono-Regular", monospace;
   font-size: 30px;
   line-height: 50px;
   background-color: #1a1b2c;
@@ -62,14 +62,14 @@ pre {
 }
 .vd-html pre,
 .vd-css pre {
-  height: 500px;
+  max-height: 500px;
   overflow: auto;
   overscroll-behavior: auto;
 }
 .vd-html p,
 .vd-css p {
   color: #cfd3e6;
-  font-family: "JetBrains-Mono-Bold", monospace;
+  font-family: "JetBrains-Mono-Regular", monospace;
   margin: 10px;
   padding: 10px;
 }
