@@ -86,9 +86,20 @@
   <body>
     <!-- Tiêu đề -->
     <header>
-      <section>
+      <article>
         <h1>Những điều cơ bản về HTML và CSS trong lập trình web</h1>
-      </section>
+      </article>
+
+      <!-- lời mở đầu -->
+      <article>
+        <h3>
+          Nếu như bạn có hứng thú với việc tạo các trang web, bạn có thể đã nghe
+          đến 2 ngôn ngữ HTML và CSS, nhưng chúng là gì? Và tại sao nó lại quan
+          trọng trong việc tạo ra 1 trang web như thế? Dưới đây mình sẽ giải đáp
+          các thắc mắc và hướng dẫn chi tiết những điều cơ bản cần biết khi học
+          HTML và CSS.
+        </h3>
+      </article>
 
       <!-- thanh điều hướng -->
       <nav>
@@ -96,19 +107,27 @@
       </nav>
     </header>
 
+    <!-- menu -->
+    <div class="menu">
+      <h2 style="margin-top: 5px; margin-bottom: 5px">Menu:</h2>
+      <ul>
+        <li>
+          <a href="#html-la-gi">HTML là gì?</a>
+        </li>
+        <li>
+          <a href="#css-la-gi">CSS là gì?</a>
+        </li>
+        <li>
+          <a href="#cau-truc-file-html">Cấu trúc của 1 file HTML</a>
+        </li>
+        <li>
+          <a href="#gioi-thieu-the-html">Giới thiệu các thẻ cơ bản của HTML</a>
+        </li>
+      </ul>
+    </div>
+
     <!-- Nội dung chính -->
     <main>
-      <!-- lời mở đầu -->
-      <article class="mo-dau">
-        <p>
-          Nếu như bạn có hứng thú với việc tạo các trang web, bạn có thể đã nghe
-          đến 2 ngôn ngữ HTML và CSS, nhưng chúng là gì? Và tại sao nó lại quan
-          trọng trong việc tạo ra 1 trang web như thế? Dưới đây mình sẽ giải đáp
-          các thắc mắc và hướng dẫn chi tiết những điều cơ bản cần biết khi học
-          HTML và CSS.
-        </p>
-      </article>
-
       <!-- html là gì -->
       <section>
         <h2 id="html-la-gi">HTML là gì?</h2>
@@ -179,8 +198,9 @@
         </p>
       </section>
 
+      <!-- cấu trúc 1 file html -->
       <section>
-        <h2 class="cau-truc-file-html">Cấu trúc 1 file HTML</h2>
+        <h2 id="cau-truc-file-html">Cấu trúc 1 file HTML</h2>
         <p>
           Dưới đây là cấu trúc cơ bản của 1 file HTML5 (phiên bản mới nhất của
           HTML):
@@ -232,6 +252,70 @@
           phần nào khác mà người dùng thấy khi họ truy cập vào trang web. Ví dụ
           như trên, thẻ body chứa 1 thẻ tiêu đề h1 với nội dung"Hello World".
         </p>
+      </section>
+
+      <!-- giới thiệu các phần tử html cơ bản -->
+      <section>
+        <h2 id="gioi-thieu-the-html">Giới thiệu các thẻ cơ bản của HTML</h2>
+        <p>
+          Dưới đây, mình sẽ liệt kê một số phần tử cơ bản để các bạn tham khảo!:
+        </p>
+
+        <!-- thẻ h1 đến h6 -->
+        <section>
+          <p>
+            Từ <code>&lt;h1&gt;&lt;/h1&gt;</code> đến
+            <code>&lt;h6&gt;&lt;/h6&gt;</code>, đây là những thẻ tiêu đề được
+            đánh dấu với kích cỡ từ nhỏ đến lớn, thường được dùng để định dạng
+            các tiêu đề trong trang web, ví dụ:
+          </p>
+
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+  <code>&lt;h1&gt;tiêu đề h1&lt;/h1&gt;
+  &lt;h2&gt;tiêu đề h2&lt;/h2&gt;
+  &lt;h3&gt;tiêu đề h3&lt;/h3&gt;
+  &lt;h4&gt;tiêu đề h4&lt;/h4&gt;
+  &lt;h5&gt;tiêu đề h5&lt;/h5&gt;
+  &lt;h6&gt;tiêu đề h6&lt;/h6&gt;</code>
+            </pre>
+          </div>
+
+          <!-- output -->
+          <p>Output:</p>
+          <img
+            src="./assets/img/the-h.png"
+            alt="Thẻ h1 đến h6 đánh dấu từ nhỏ đến lớn"
+          />
+        </section>
+
+        <!-- thẻ p -->
+        <section>
+          <p>
+            Thẻ <code>&lt;p&gt;&lt;/p&gt;</code> là thẻ sẽ định dạng văn bản
+            thành các đoạn văn, ví dụ:
+          </p>
+
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+<code>&lt;p&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  Cupiditate reiciendis facere deleniti magnam enim laboriosam
+  est neque possimus, asperiores, quas perspiciatis odio aspernatur
+  quasi voluptatem repellendus quos cumque aliquam nobis!
+&lt;/p&gt;</code>
+            </pre>
+          </div>
+
+          <!--output -->
+          <p>Output:</p>
+          <img
+            src="./assets/img/the-p.png"
+            alt="Thẻ p định dạng đoạn văn bản"
+          />
+        </section>
       </section>
     </main>
 
