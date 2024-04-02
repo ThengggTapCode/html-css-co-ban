@@ -120,9 +120,26 @@
         <li>
           <a href="#cau-truc-file-html">Cấu trúc của 1 file HTML</a>
         </li>
-        <li>
-          <a href="#gioi-thieu-the-html">Giới thiệu các thẻ cơ bản của HTML</a>
-        </li>
+
+        <!-- drop down menu -->
+        <div class="drop-down">
+          <li>
+            <a href="#gioi-thieu-the-html"
+              >Giới thiệu các thẻ cơ bản của HTML</a
+            >
+          </li>
+
+          <!-- drop down content -->
+          <div class="drop-down-content">
+            <ul>
+              <li><a href="#the-h">Thẻ h</a></li>
+              <li><a href="#the-p">Thẻ p</a></li>
+              <li><a href="#the-a">Thẻ a</a></li>
+              <li><a href="#the-img">Thẻ img</a></li>
+              <li><a href="#the-ul-ol-li">Thẻ ol, ul, li</a></li>
+            </ul>
+          </div>
+        </div>
       </ul>
     </div>
 
@@ -193,7 +210,7 @@
         <img src="./assets/img/black-box.png" alt="Black Box" />
 
         <p>
-          Qua CSS, ta sẽ có 1 hình chữ nhật màu đen dài 250px và rộng 250px, bên
+          Qua CSS, ta sẽ có 1 hình vuông màu đen dài 250px và rộng 250px, bên
           trong nó có dòng chữ "Box" màu trắng
         </p>
       </section>
@@ -207,7 +224,7 @@
         </p>
 
         <div class="vd-html">
-          <p>HTMl</p>
+          <p>HTML</p>
           <pre>
 <code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -258,11 +275,16 @@
       <section>
         <h2 id="gioi-thieu-the-html">Giới thiệu các thẻ cơ bản của HTML</h2>
         <p>
-          Dưới đây, mình sẽ liệt kê một số phần tử cơ bản để các bạn tham khảo!:
+          Dưới đây, mình sẽ liệt kê một số thẻ và phần tử cơ bản để các bạn tham
+          khảo!
         </p>
 
         <!-- thẻ h1 đến h6 -->
         <section>
+          <h2 id="the-h">
+            Thẻ <code>&lt;h1&gt;&lt;/h1&gt;</code> đến thẻ
+            <code>&lt;h6&gt;&lt;/h6&gt;</code>:
+          </h2>
           <p>
             Từ <code>&lt;h1&gt;&lt;/h1&gt;</code> đến
             <code>&lt;h6&gt;&lt;/h6&gt;</code>, đây là những thẻ tiêu đề được
@@ -273,12 +295,12 @@
           <div class="vd-html">
             <p>HTML</p>
             <pre>
-  <code>&lt;h1&gt;tiêu đề h1&lt;/h1&gt;
-  &lt;h2&gt;tiêu đề h2&lt;/h2&gt;
-  &lt;h3&gt;tiêu đề h3&lt;/h3&gt;
-  &lt;h4&gt;tiêu đề h4&lt;/h4&gt;
-  &lt;h5&gt;tiêu đề h5&lt;/h5&gt;
-  &lt;h6&gt;tiêu đề h6&lt;/h6&gt;</code>
+<code>&lt;h1&gt;tiêu đề h1&lt;/h1&gt;
+&lt;h2&gt;tiêu đề h2&lt;/h2&gt;
+&lt;h3&gt;tiêu đề h3&lt;/h3&gt;
+&lt;h4&gt;tiêu đề h4&lt;/h4&gt;
+&lt;h5&gt;tiêu đề h5&lt;/h5&gt;
+&lt;h6&gt;tiêu đề h6&lt;/h6&gt;</code>
             </pre>
           </div>
 
@@ -292,6 +314,7 @@
 
         <!-- thẻ p -->
         <section>
+          <h2 id="the-p">Thẻ <code>&lt;p&gt;&lt;/p&gt;</code>:</h2>
           <p>
             Thẻ <code>&lt;p&gt;&lt;/p&gt;</code> là thẻ sẽ định dạng văn bản
             thành các đoạn văn, ví dụ:
@@ -315,6 +338,91 @@
             src="./assets/img/the-p.png"
             alt="Thẻ p định dạng đoạn văn bản"
           />
+        </section>
+
+        <!-- thẻ a -->
+        <section>
+          <h2 id="the-a">Thẻ <code>&lt;a&gt;&lt;/a&gt;</code>:</h2>
+          <p>
+            Thẻ <code>&lt;a&gt;&lt;/a&gt;</code> sẽ tạo ra các liên kết, khi
+            người dùng nhấn vào sẽ điều hướng đến các trang web khác, ví dụ:
+          </p>
+
+          <!-- ví dụ html -->
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+<code>&lt;a href=&quot;https://youtube.com&quot;&gt;Youtube&lt;/a&gt;
+&lt;a href=&quot;https://facebook.com&quot;&gt;Facebook&lt;/a&gt;</code>
+            </pre>
+          </div>
+
+          <!-- output -->
+          <p>Output:</p>
+          <img
+            src="./assets/img/the-a.png"
+            alt="Thẻ a tạo 1 liên kết đến 1 trang web"
+          />
+        </section>
+
+        <section>
+          <h2 id="the-img">Thẻ <code>&lt;img/&gt;</code>:</h2>
+          <p>
+            Thẻ <code>&lt;img/&gt;</code> là một thẻ tự đóng, khi truyền đường
+            dẫn đến file hình ảnh, hiển thị hình ảnh lên trang web, ví dụ:
+          </p>
+
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+<code>&lt;img src=&quot;./assets/img/hello-world.png&quot; 
+alt=&quot;Hình ảnh dòng code Hello World&quot;/&gt;</code>
+            </pre>
+          </div>
+
+          <!-- output -->
+          <p>Output</p>
+          <img src="./assets/img/the-img.png" alt="Thẻ img hiển thị hình ảnh" />
+        </section>
+
+        <section>
+          <h2 id="the-ul-ol-li">
+            Thẻ <code>&lt;ol&gt;&lt;/ol&gt;</code>, thẻ
+            <code>&lt;ul&gt;&lt;/ul&gt;</code> và thẻ
+            <code>&lt;li&gt;&lt;/li&gt;</code>:
+          </h2>
+
+          <p>
+            Thẻ <code>&lt;ol&gt;&lt;/ol&gt;</code> định dạng 1 danh sách có thứ
+            tự, vd: từ 1 đến 5, từ a đến z, ngược lại, thẻ
+            <code>&lt;ul&gt;&lt;/ul&gt;</code> định dạng 1 danh sách không có
+            thứ tự cụ thể, đối với thẻ <code>&lt;li&gt;&lt;/li&gt;</code> là thẻ
+            có thể đặt trong cả thẻ ol hoặc ul, có chức năng định dạng các mục
+            trong danh sách, có thể có thứ tự hoặc không, ví dụ:
+          </p>
+
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+<code><div class="code-comment">&lt;!-- danh sách có thứ tự --&gt;</div>
+&lt;ol&gt;
+  &lt;li&gt;Hạng 1&lt;/li&gt;
+  &lt;li&gt;Hạng 2&lt;/li&gt;
+  &lt;li&gt;Hạng 3&lt;/li&gt;
+&lt;/ol&gt;
+
+<div class="code-comment">&lt;!-- danh sách không có thứ tự --&gt;</div>
+&lt;ul&gt;
+  &lt;li&gt;Nguyễn Văn A - Bác sĩ&lt;/li&gt;
+  &lt;li&gt;Lê Thị B - Giáo viên&lt;/li&gt;
+  &lt;li&gt;Đỗ Hoàng C - Kiến trúc sư&lt;/li&gt;
+&lt;/ul&gt;</code>
+            </pre>
+          </div>
+
+          <!-- output -->
+          <p>Output:</p>
+          <img src="./assets/img/the-ol-ul-li.png" alt="Thẻ ol, ul, li" />
         </section>
       </section>
     </main>

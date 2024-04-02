@@ -81,6 +81,7 @@ code {
   padding: 5px;
   border-radius: 5px;
 }
+
 pre {
   background-color: #1a1b2c;
   padding: 28px;
@@ -114,6 +115,23 @@ pre {
 .vd-css code {
   font-size: 20px;
 }
+.code-comment {
+  display: inline-block;
+  font-family: "JetBrains-Mono-Regular", monospace;
+  font-size: 20px;
+  color: #4b4f5f;
+}
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+.drop-down-content {
+  display: none;
+}
+.drop-down:hover .drop-down-content {
+  display: block;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
