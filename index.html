@@ -198,11 +198,11 @@
           <p>CSS</p>
           <pre>
 <code>.box {
-  font-size: 50px; /* cỡ chữ 50px */
-  color: white; /* màu chữ trắng */
-  background-color: black; /* nền đen */
-  width: 250px; /* rộng 250px */
-  height: 250px; /* cao 250px */
+  font-size: 50px; <span class="code-comment">/* cỡ chữ 50px */</span>
+  color: white; <span class="code-comment">/* màu chữ trắng */</span>
+  background-color: black; <span class="code-comment">/* nền đen */</span>
+  width: 250px; <span class="code-comment">/* rộng 250px */</span>
+  height: 250px; <span class="code-comment">/* cao 250px */</span>
 }</code></pre>
         </div>
 
@@ -363,8 +363,16 @@
             src="./assets/img/the-a.png"
             alt="Thẻ a tạo 1 liên kết đến 1 trang web"
           />
+
+          <p>Trong đó:</p>
+          <p>
+            <code>href = ""</code> là thuộc tính với mục đích xác định đường dẫn
+            đến các liên kết hoặc các dữ liệu trong dự án, ví dụ trên, href sẽ
+            xác định đường dẫn của Youtube và Facebook.
+          </p>
         </section>
 
+        <!-- thẻ img -->
         <section>
           <h2 id="the-img">Thẻ <code>&lt;img/&gt;</code>:</h2>
           <p>
@@ -383,8 +391,19 @@ alt=&quot;Hình ảnh dòng code Hello World&quot;/&gt;</code>
           <!-- output -->
           <p>Output</p>
           <img src="./assets/img/the-img.png" alt="Thẻ img hiển thị hình ảnh" />
+
+          <p>Trong đó:</p>
+          <p>
+            <code>src = ""</code> như thuộc tính href, sẽ xác định đường dẫn,
+            thường là đường dẫn đến các dữ liệu như hình ảnh, v.v../
+          </p>
+          <p>
+            <code>alt = ""</code> sẽ cung cấp văn bản thay thế cho hình ảnh nếu
+            như hình file hình ảnh gặp trục trặc.
+          </p>
         </section>
 
+        <!-- thẻ ul ol li -->
         <section>
           <h2 id="the-ul-ol-li">
             Thẻ <code>&lt;ol&gt;&lt;/ol&gt;</code>, thẻ
@@ -404,14 +423,14 @@ alt=&quot;Hình ảnh dòng code Hello World&quot;/&gt;</code>
           <div class="vd-html">
             <p>HTML</p>
             <pre>
-<code><div class="code-comment">&lt;!-- danh sách có thứ tự --&gt;</div>
+<code><span class="code-comment">&lt;!-- danh sách có thứ tự --&gt;</span>
 &lt;ol&gt;
   &lt;li&gt;Hạng 1&lt;/li&gt;
   &lt;li&gt;Hạng 2&lt;/li&gt;
   &lt;li&gt;Hạng 3&lt;/li&gt;
 &lt;/ol&gt;
 
-<div class="code-comment">&lt;!-- danh sách không có thứ tự --&gt;</div>
+<span class="code-comment">&lt;!-- danh sách không có thứ tự --&gt;</span>
 &lt;ul&gt;
   &lt;li&gt;Nguyễn Văn A - Bác sĩ&lt;/li&gt;
   &lt;li&gt;Lê Thị B - Giáo viên&lt;/li&gt;
@@ -423,6 +442,70 @@ alt=&quot;Hình ảnh dòng code Hello World&quot;/&gt;</code>
           <!-- output -->
           <p>Output:</p>
           <img src="./assets/img/the-ol-ul-li.png" alt="Thẻ ol, ul, li" />
+        </section>
+
+        <!-- thẻ div span -->
+        <section>
+          <h2 id="the-div-span">
+            Thẻ <code>&lt;div&gt;&lt;/div&gt;</code> và thẻ
+            <code>&lt;span&gt;&lt;/span&gt;</code>:
+          </h2>
+
+          <p>
+            Thẻ <code>&lt;div&gt;&lt;/div&gt;</code> và thẻ
+            <code>&lt;span&gt;&lt;/span&gt;</code> được sử dụng để tạo ra các
+            khối hoặc phần tử nhỏ hơn không chứa bất kỳ dạng định dạng nào mặc
+            định nào, trong đó:
+          </p>
+
+          <p>
+            Thẻ <code>&lt;div&gt;&lt;/div&gt;</code> thường được sử dụng để tạo
+            ra các khối trên trang web, nhóm và tổ chức các phần tử HTML liên
+            quan lại với nhau, tạo layout, cũng như là tạo các khu vực như phần
+            tiêu đề, nội dung chính,... cho trang web.
+          </p>
+
+          <p>
+            Thẻ <code>&lt;span&gt;&lt;/span&gt;</code> được sử dụng để áp dụng
+            kiểu dáng hoặc định dạng cho một phần nhỏ của văn bản, hoặc một phần
+            tử con bên trong một phần tử khác, áp dụng CSS hoặc định dạng nội
+            dung một cách linh hoạt, mà không làm thay đổi cấu trúc của trang
+            web, ví dụ:
+          </p>
+
+          <div class="vd-html">
+            <p>HTML</p>
+            <pre>
+<code><span class="code-comment">&lt;!-- thẻ div gộp lại thẻ h1, p--&gt;</span>
+&lt;div class=&quot;header&quot;&gt;
+  &lt;h1&gt;Đây là Tiêu đề&lt;/h1&gt;
+  &lt;p&gt;Chú thích cho tiêu đề&lt;/p&gt;
+&lt;/div&gt;
+
+<span class="code-comment">&lt;!-- thẻ span nằm trong thẻ p --&gt;</span>
+&lt;p&gt;Đây là thẻ p và thẻ &lt;span&gt;thẻ span&lt;/span&gt;&lt;/p&gt;</code>
+            </pre>
+          </div>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>.header {
+  font-family: sans-serif; <span class="code-comment">/* font sans serif*/</span>
+  font-size: 1.2em; <span class="code-comment">/* cỡ chữ lớn 1.2 lần hiện tại */</span>
+}
+span {
+  font-size: 1.5em; <span class="code-comment">/* cỡ chữ lớn 1.5 lần hiện tại */</span>
+  font-weight: bold; <span class="code-comment">/* in đậm */</span> 
+}</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/the-div-span.png"
+            alt="Ví dụ cho sử dụng thẻ div và span"
+          />
         </section>
       </section>
     </main>
