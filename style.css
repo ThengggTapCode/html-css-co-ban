@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Lato-Black";
-  src: url(/assets/fonts/Lato-Black.ttf) format("truetype");
+  src: url(./assets/fonts/Lato-Black.ttf) format("truetype");
 }
 @font-face {
   font-family: "Open-Sans-Regular";
-  src: url(/assets/fonts/OpenSans-Regular.ttf) format("truetype");
+  src: url(./assets/fonts/OpenSans-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "JetBrains-Mono-Regular";
-  src: url(/assets/fonts/JetBrainsMono-Regular.ttf) format("truetype");
+  src: url(./assets/fonts/JetBrainsMono-Regular.ttf) format("truetype");
 }
 html {
   scroll-behavior: smooth;
