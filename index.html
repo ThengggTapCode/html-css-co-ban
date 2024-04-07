@@ -140,6 +140,27 @@
             </ul>
           </div>
         </div>
+
+        <!-- drop down menu -->
+        <div class="drop-down">
+          <li><a href="#thuoc-tinh-css">Các thuộc tính CSS cơ bản</a></li>
+
+          <div class="drop-down-content">
+            <ul>
+              <li><a href="#thuoc-tinh-color">Thuộc tính color</a></li>
+              <li>
+                <a href="#thuoc-tinh-bgc">Thuộc tính background-color</a>
+              </li>
+              <li><a href="#thuoc-tinh-font-size">Thuộc tính font-size</a></li>
+              <li>
+                <a href="#thuoc-tinh-font-weight">Thuộc tính font-weight</a>
+              </li>
+              <li>
+                <a href="#thuoc-tinh-font-family">Thuộc tính font-family</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </ul>
     </div>
 
@@ -505,6 +526,146 @@ span {
           <img
             src="./assets/img/the-div-span.png"
             alt="Ví dụ cho sử dụng thẻ div và span"
+          />
+        </section>
+      </section>
+
+      <!-- các thuộc tính css cơ bản -->
+      <section>
+        <h2 id="thuoc-tinh-css">Các thuộc tính CSS cơ bản</h2>
+
+        <p>
+          Đi cùng với các thẻ, phần tử HTML, các thuộc tính CSS sẽ giúp cho
+          trang web trở nên đẹp đẽ và sinh động hơn, và dưới đây sẽ là 1 số
+          thuộc tính CSS cơ bản.
+        </p>
+
+        <!-- thuộc tính color -->
+        <section>
+          <h2 id="thuoc-tinh-color">Thuộc tính color:</h2>
+          <p>
+            Khi áp dụng thuộc tính color cho 1 phần tử bất kì thì sẽ xác định
+            màu sắc cho văn bản bên trong phần tử đó, ví dụ:
+          </p>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>p {
+  color: red;
+}</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/thuoc-tinh-color.png"
+            alt="Thuộc tính color: red;"
+          />
+        </section>
+
+        <!-- thuộc tính background-color -->
+        <section>
+          <h2 id="thuoc-tinh-bgc">Thuộc tính background-color:</h2>
+          <p>
+            Khi áp dụng thuộc tính background-color, sẽ áp dụng màu của nền cho
+            phần tử, vd:
+          </p>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>p {
+  background-color: blue;
+  color: white;
+}
+</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/thuoc-tinh-bgc.png"
+            alt="Thuộc background-color"
+          />
+        </section>
+
+        <!-- thuộc tính font-size -->
+        <section>
+          <h2 id="thuoc-tinh-font-size">Thuộc tính font-size</h2>
+          <p>
+            Khi muốn tăng hoặc giảm kích cỡ chữ của một phần tử, sử dụng thuộc
+            tính font-size sẽ giúp điều chỉnh kích cỡ của văn bản của 1 phần tử,
+            vd:
+          </p>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>p {
+  font-size: 75px; <span class="code-comment">/* tăng cõ chữ lên 75 pixel */</span>
+}
+</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/thuoc-tinh-font-szie.png"
+            alt="Thuộc tính font-size"
+          />
+        </section>
+
+        <!-- thuộc tính font-weight -->
+        <section>
+          <h2 id="thuoc-tinh-font-weight">Thuộc tính font-weight</h2>
+          <p>
+            Nếu như phông chữ chưa đủ đậm hoặc cần phải mỏng hơn, sử dụng thuộc
+            tính font-weight sẽ giúp làm mỏng hoặc làm đậm văn bản của phần tử,
+            vd:
+          </p>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>p {
+  font-weight: bold; <span class="code-comment">/* in đậm chữ */</span>
+}
+</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/thuoc-tinh-font-weight.png"
+            alt="Thuộc tính font-weight"
+          />
+        </section>
+
+        <!-- thuộc tính font-family -->
+        <section>
+          <h2 id="thuoc-tinh-font-family">Thuộc tính font-family</h2>
+          <p>
+            Để làm cho văn bản được hiển thị với phông chữ đẹp hơn, ta có thể sử
+            dụng thuộc tính font-family để xác định phông chữ cho văn bản, vd:
+          </p>
+
+          <div class="vd-css">
+            <p>CSS</p>
+            <pre>
+<code>.sans-serif {
+  font-family: sans-serif; <span class="code-comment">/* phông chữ sans-serif */</span>
+}
+.monospace {
+  font-family: monospace; <span class="code-comment">/* phông chữ monospace */</span>
+}</code>
+            </pre>
+          </div>
+
+          <p>Output:</p>
+          <img
+            src="./assets/img/thuoc-tinh-font-family.png"
+            alt="Thuộc tính font-family"
           />
         </section>
       </section>

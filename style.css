@@ -60,6 +60,8 @@ p {
   background-color: #dddddd;
   text-decoration: none;
   transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
 }
 .menu a:hover {
   background-color: #242424;
@@ -71,6 +73,7 @@ p {
 
 img {
   width: 30vw;
+  height: auto;
 }
 code {
   font-family: "JetBrains-Mono-Regular", monospace;
@@ -102,6 +105,7 @@ pre {
 .vd-css pre {
   max-height: 500px;
   overflow: auto;
+  -ms-scroll-chaining: chained;
   overscroll-behavior: auto;
 }
 .vd-html p,
